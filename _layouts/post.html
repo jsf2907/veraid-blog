@@ -14,7 +14,7 @@ layout: default
     </div>
   </header>
   {% if page.cover %}
-  <div class="vb-wrap vb-narrow"><img class="vb-cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt }}"></div>
+  <div class="vb-wrap vb-narrow"><img class="vb-cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt }}"{% if page.cover_position %} style="object-position: {{ page.cover_position }}"{% endif %}></div>
   {% endif %}
   <div class="vb-wrap vb-narrow vb-prose">
     {{ content }}

@@ -47,7 +47,7 @@ h1,h2,h3,p{margin:0}
 .vb-back{font-size:14px; color:var(--vb-muted)}
 .vb-post-head h1{font-size:44px; line-height:1.12; font-weight:800; letter-spacing:-0.03em}
 .vb-meta{display:flex; gap:8px; font-size:14px; color:var(--vb-soft)}
-.vb-cover{width:100%; border-radius:20px; margin-top:40px}
+.vb-cover{width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:20px; margin-top:40px}
 
 .vb-prose{padding-top:48px; padding-bottom:24px; font-size:18px; line-height:1.75; color:#D6DEEA}
 .vb-prose > * + *{margin-top:1.15em}
