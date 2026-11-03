@@ -4,7 +4,8 @@
   --vb-text:#FFFFFF; --vb-muted:#B4C2D8; --vb-soft:#8C9AB0; --vb-link:#8FB8FF; --vb-accent:#2563EB;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+#get-app{scroll-margin-top:24px}
 body{margin:0; background:var(--vb-bg); color:var(--vb-text); font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased}
 img{display:block; max-width:100%; height:auto}
 a{color:var(--vb-link); text-decoration:none}
