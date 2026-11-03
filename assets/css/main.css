@@ -59,6 +59,7 @@ h1,h2,h3,p{margin:0}
 .vb-prose ul,.vb-prose ol{padding-left:1.3em; margin-bottom:0}
 .vb-prose li + li{margin-top:0.5em}
 .vb-prose li::marker{color:var(--vb-link)}
+.vb-prose img{width:100%; border-radius:20px; border:1px solid var(--vb-line)}
 .vb-prose blockquote{margin:1.4em 0 0; padding:18px 22px; border-left:3px solid var(--vb-accent); background:var(--vb-panel); border-radius:0 14px 14px 0; color:#E6EEFF}
 
 /* Key takeaways box */
