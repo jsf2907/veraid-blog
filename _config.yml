@@ -1,0 +1,36 @@
+# VeraID Blog (blog.veraid.org)
+title: VeraID Blog
+description: Safety, identity verification and trust for travelers, providers and businesses in Colombia.
+lang: en_US
+author: VeraID
+
+# Preview address while hosting is set up on GitHub.
+# When blog.veraid.org goes live: set url to https://blog.veraid.org and baseurl to "".
+url: https://jsf2907.github.io
+baseurl: /veraid-blog
+
+permalink: /:title/
+timezone: America/Bogota
+markdown: kramdown
+
+# Default share image (link previews on WhatsApp, LinkedIn, etc.)
+logo: https://wmqnmpalslkvzorsihcq.supabase.co/storage/v1/object/public/site-media/veraid-shield.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://wmqnmpalslkvzorsihcq.supabase.co/storage/v1/object/public/site-media/veraid-shield.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - .gitignore

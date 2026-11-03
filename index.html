@@ -1,0 +1,25 @@
+---
+layout: default
+title: VeraID Blog
+---
+<section class="vb-wrap vb-hero">
+  <span class="vb-eyebrow">VeraID Blog</span>
+  <h1>Safety and trust, before the first meeting</h1>
+  <p class="vb-lead">Practical guides on identity verification, scams and personal safety for travelers, providers and businesses in Colombia.</p>
+</section>
+
+<section class="vb-wrap vb-list">
+  {% for post in site.posts %}
+  <a class="vb-card" href="{{ post.url | relative_url }}">
+    {% if post.cover %}<img class="vb-card-img" src="{{ post.cover }}" alt="">{% else %}<div class="vb-card-art"><img src="https://wmqnmpalslkvzorsihcq.supabase.co/storage/v1/object/public/site-media/veraid-shield.png" alt=""></div>{% endif %}
+    <div class="vb-card-body">
+      {% if post.category_label %}<span class="vb-tag">{{ post.category_label }}</span>{% endif %}
+      <h2>{{ post.title }}</h2>
+      {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      <span class="vb-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+<div class="vb-wrap">{% include cta.html %}</div>

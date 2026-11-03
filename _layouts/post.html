@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign words = content | number_of_words %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
+<article class="vb-article">
+  <header class="vb-post-head">
+    <div class="vb-wrap vb-narrow">
+      <a class="vb-back" href="{{ '/' | relative_url }}">← All articles</a>
+      {% if page.category_label %}<span class="vb-eyebrow">{{ page.category_label }}</span>{% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="vb-lead">{{ page.description }}</p>{% endif %}
+      <div class="vb-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time><span>·</span><span>{{ minutes }} min read</span></div>
+    </div>
+  </header>
+  {% if page.cover %}
+  <div class="vb-wrap vb-narrow"><img class="vb-cover" src="{{ page.cover }}" alt="{{ page.cover_alt }}"></div>
+  {% endif %}
+  <div class="vb-wrap vb-narrow vb-prose">
+    {{ content }}
+  </div>
+  <div class="vb-wrap vb-narrow">
+    {% include cta.html %}
+  </div>
+</article>
