@@ -2,6 +2,9 @@
 title: "Plenty of Catfish Dating Site: Spot Fake POF Profiles"
 description: "Check photo count, profile consistency, escalation pace and money asks before you message any POF match, and how to verify who you're meeting in Colombia."
 category_label: Dating safety
+cover: /assets/images/spot-fake-pof-profiles.jpg
+cover_alt: A hand holding a smartphone at a café terrace overlooking city lights at dusk
+image: /assets/images/spot-fake-pof-profiles.jpg
 date: 2026-11-02 09:00:00 -0500
 ---
 

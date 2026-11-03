@@ -11,7 +11,7 @@ title: VeraID Blog
 <section class="vb-wrap vb-list">
   {% for post in site.posts %}
   <a class="vb-card" href="{{ post.url | relative_url }}">
-    {% if post.cover %}<img class="vb-card-img" src="{{ post.cover }}" alt="">{% else %}<div class="vb-card-art"><img src="https://wmqnmpalslkvzorsihcq.supabase.co/storage/v1/object/public/site-media/veraid-shield.png" alt=""></div>{% endif %}
+    {% if post.cover %}<img class="vb-card-img" src="{{ post.cover | relative_url }}" alt="">{% else %}<div class="vb-card-art"><img src="https://wmqnmpalslkvzorsihcq.supabase.co/storage/v1/object/public/site-media/veraid-shield.png" alt=""></div>{% endif %}
     <div class="vb-card-body">
       {% if post.category_label %}<span class="vb-tag">{{ post.category_label }}</span>{% endif %}
       <h2>{{ post.title }}</h2>
