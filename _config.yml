@@ -6,8 +6,8 @@ author: VeraID
 
 # Preview address while hosting is set up on GitHub.
 # When blog.veraid.org goes live: set url to https://blog.veraid.org and baseurl to "".
-url: https://jsf2907.github.io
-baseurl: /veraid-blog
+url: https://blog.veraid.org
+baseurl: ""
 
 permalink: /:title/
 timezone: America/Bogota
