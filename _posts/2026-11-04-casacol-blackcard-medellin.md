@@ -2,7 +2,7 @@
 title: "Casacol BlackCard Medellín: Stay in Style, Verify Before You Meet"
 description: "Casacol guests get Medellín's best perks with the VIP BlackCard. VeraID is now one of its partners, so you can verify your guide, driver or host before you meet."
 category_label: Travel safety
-date: 2026-11-04 09:00:00 -0500
+date: 2026-11-04 08:00:00 -0500
 cover: /assets/images/casacol-blackcard-medellin.jpg
 cover_alt: VeraID logo with the headline Stay in style, verify before you meet
 image: /assets/images/casacol-blackcard-medellin.jpg
