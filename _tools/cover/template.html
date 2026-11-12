@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: Inter; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: Inter; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format("woff2"); }
+  @font-face { font-family: Inter; font-weight: 800; src: url(fonts/inter-latin-800-normal.woff2) format("woff2"); }
+  :root { --navy: #07111F; --blue: #2563EB; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; background: var(--navy); }
+  .photo {
+    position: absolute; inset: 0;
+    background: var(--navy) center / cover no-repeat;
+  }
+  /* No-photo fallback: subtle navy-to-blue glow on the right */
+  .photo.none {
+    background:
+      radial-gradient(circle at 78% 40%, rgba(37,99,235,.55), transparent 55%),
+      radial-gradient(circle at 95% 95%, rgba(37,99,235,.25), transparent 45%),
+      var(--navy);
+  }
+  .panel {
+    position: absolute; top: 0; left: 0; bottom: 0; width: 680px;
+    background: var(--navy);
+    clip-path: polygon(0 0, 480px 0, 680px 50%, 480px 100%, 0 100%);
+  }
+  .edge {
+    position: absolute; top: 0; left: 0; bottom: 0; width: 688px;
+    background: var(--blue);
+    clip-path: polygon(480px 0, 488px 0, 688px 50%, 488px 100%, 480px 100%, 680px 50%);
+  }
+  .text {
+    position: absolute; left: 56px; top: 0; bottom: 0; width: 470px;
+    display: flex; flex-direction: column; justify-content: center;
+    font-family: Inter, sans-serif; color: #fff;
+  }
+  .brand { font-size: 22px; font-weight: 600; letter-spacing: .02em; color: #9DB8F5; margin-bottom: 28px; }
+  h1 { font-size: 76px; font-weight: 800; line-height: 1.02; letter-spacing: -.02em; }
+  .rule { width: 170px; height: 4px; background: var(--blue); margin: 34px 0 30px; border-radius: 2px; }
+  p { font-size: 31px; font-weight: 400; line-height: 1.32; color: #E6ECF7; }
+</style>
+</head>
+<body>
+  <div class="photo" id="photo"></div>
+  <div class="edge"></div>
+  <div class="panel"></div>
+  <div class="text">
+    <div class="brand">VeraID Blog</div>
+    <h1 id="headline"></h1>
+    <div class="rule"></div>
+    <p id="subtitle"></p>
+  </div>
+</body>
+</html>
